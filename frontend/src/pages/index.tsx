@@ -1,3 +1,6 @@
+import Input from "@/components/Input";
+import { Crosshair } from "lucide-react";
+
 export default function Home() {
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-start p-4">
@@ -8,7 +11,14 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="w-full flex flex-col justify-start items-start"></div>
+      <div className="w-full flex flex-col justify-start items-start">
+        <Input
+          label="Current Location"
+          Icon={Crosshair}
+          id="current-location"
+          type="string"
+        />
+      </div>
     </div>
   );
 }
